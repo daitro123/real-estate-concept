@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/main.css" />
+		<title>Real Estate Company</title>
+	</head>
+	<body>
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__container">
+					<div class="header__logo-container">
+						<h1 class="header__logo">
+							<span class="footer__logo-real">Real</span> Estate
+						</h1>
+					</div>
+					<nav class="nav" id="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="index.html" class="nav__link">Home</a>
+							</li>
+							<li class="nav__item">
+								<a href="about.html" class="nav__link">About</a>
+							</li>
+							<li class="nav__item">
+								<a href="blog.html" class="nav__link">Blog</a>
+							</li>
+							<li class="nav__item">
+								<a href="properties.html" class="nav__link nav__link--active"
+									>Properties</a
+								>
+							</li>
+							<li class="nav__item">
+								<a href="contact.html" class="nav__link">Contact</a>
+							</li>
+						</ul>
+						<div class="burger">
+							<div class="burger-line line1"></div>
+							<div class="burger-line line2"></div>
+							<div class="burger-line line3"></div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="main-property" id="main-property">
+			<div class="property">
+				<div class="property__gallery-container">
+					<header>
+						<div class="property__header">
+							<h2 class="property__title">Family home</h2>
+							<p class="property__location">Prague, Cernosice</p>
+						</div>
+					</header>
+					<div class="carousel">
+						<div class="carousel__images">
+							<img src="./img/stephen-leonardi-8xn_PWT_6d0-unsplash.jpg" alt="" />
+
+							<img src="./img/house-building-home-1946371.jpg" alt="" />
+
+							<img src="./img/neonbrand-kdwahpWYfQo-unsplash.jpg" alt="" />
+
+							<img src="./img/office-windows.webp" alt="" />
+						</div>
+
+						<button aria-label="Previous" class="btn-prev">
+							<svg class="btn-prev-svg">
+								<use xlink:href="img/fa-solid-sprite.svg#angle-left"></use>
+							</svg>
+						</button>
+						<button aria-label="Next" class="btn-next">
+							<svg class="btn-next-svg">
+								<use xlink:href="img/fa-solid-sprite.svg#angle-right"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="property__gallery">
+						<img
+							src="./img/stephen-leonardi-8xn_PWT_6d0-unsplash.jpg"
+							alt=""
+							data-order="0"
+						/>
+						<img src="./img/house-building-home-1946371.jpg" alt="" data-order="1" />
+						<img src="./img/neonbrand-kdwahpWYfQo-unsplash.jpg" alt="" data-order="2" />
+						<img src="./img/office-windows.webp" alt="" data-order="3" />
+					</div>
+				</div>
+				<div class="property__overview">
+					<div class="property__overview-container">
+						<div class="property__summary">
+							<h3 class="property__overview-header">Summary</h3>
+							<hr class="hr-overview" />
+							<dl>
+								<dt>Type</dt>
+								<dd>Apartment</dd>
+								<dt>Price</dt>
+								<dd>$42,000</dd>
+								<dt>Status</dt>
+								<dd>Sale</dd>
+								<dt>Area</dt>
+								<dd>80 m2</dd>
+								<dt>Bedrooms</dt>
+								<dd>1</dd>
+								<dt>Bathrooms</dt>
+								<dd>1</dd>
+							</dl>
+						</div>
+						<div class="property__description">
+							<h3 class="property__overview-header">Description</h3>
+							<hr class="hr-overview" />
+							<p class="property__description-text">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+								optio tempora ipsam molestiae neque eum. Soluta saepe pariatur quis
+								cum omnis voluptate cumque laudantium officiis voluptatum provident
+								consectetur eaque tempore mollitia necessitatibus maxime quas sint
+								magnam, ullam aliquam amet id ad quos minus deleniti! Delectus
+								temporibus fuga repudiandae perspiciatis impedit vero et atque
+								praesentium ducimus!
+							</p>
+						</div>
+					</div>
+					<div class="property__map">
+						<h3 class="property__overview-header">Map</h3>
+						<hr class="hr-overview" />
+						<img src="/img/gmaps.PNG" alt="" srcset="" />
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__parts-container">
+					<div class="footer__logo-box">
+						<h1 class="footer__logo">
+							<span class="footer__logo-real">Reality</span> Macek
+						</h1>
+						<div class="footer__media-icons">
+							<ul>
+								<li>
+									<svg class="footer__media-icon">
+										<use xlink:href="img/fa-brands-sprite.svg#facebook"></use>
+									</svg>
+								</li>
+								<li>
+									<svg class="footer__media-icon">
+										<use xlink:href="img/fa-brands-sprite.svg#twitter"></use>
+									</svg>
+								</li>
+								<li>
+									<svg class="footer__media-icon">
+										<use xlink:href="img/fa-brands-sprite.svg#linkedin"></use>
+									</svg>
+								</li>
+								<li>
+									<svg class="footer__media-icon">
+										<use xlink:href="img/fa-brands-sprite.svg#youtube"></use>
+									</svg>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__links-container">
+						<div class="footer__links">
+							<h5 class="heading-h5 mg-bottom--2">Links</h5>
+							<ul>
+								<li>Home</li>
+								<li>About</li>
+								<li>Blog</li>
+								<li>Properties</li>
+								<li>Contact</li>
+							</ul>
+						</div>
+						<div class="footer__links">
+							<h5 class="heading-h5 mg-bottom--2">Company</h5>
+							<ul>
+								<li>FAQ</li>
+								<li>Careers</li>
+								<li>Partners</li>
+								<li>Agent Access</li>
+								<li>Contact Us</li>
+							</ul>
+						</div>
+					</div>
+					<form class="newsletter">
+						<div class="newsletter__header">
+							<svg class="newsletter__icon">
+								<use xlink:href="img/fa-solid-sprite.svg#envelope"></use>
+							</svg>
+							<p>Stay up to date with Real Estate</p>
+						</div>
+						<div class="newsletter__form-control">
+							<input type="email" placeholder=" " id="newsletter__email" />
+							<label for="newsletter__email">Email</label>
+						</div>
+						<button class="btn btn--transparent-grey btn--pdmedium mg-top--1">
+							Sign Up
+						</button>
+					</form>
+				</div>
+			</div>
+		</footer>
+		<script src="/js/carousel.js"></script>
+		<script src="/js/burger.js"></script>
+	</body>
+</html>

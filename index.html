@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/main.css" />
+		<title>Real Estate Company</title>
+	</head>
+	<body>
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__container">
+					<div class="header__logo-container">
+						<h1 class="header__logo">
+							<span class="header__logo-real">Real</span> Estate
+						</h1>
+					</div>
+					<nav class="nav" id="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="index.html" class="nav__link nav__link--active">Home</a>
+							</li>
+							<li class="nav__item">
+								<a href="about.html" class="nav__link">About</a>
+							</li>
+							<li class="nav__item">
+								<a href="blog.html" class="nav__link">Blog</a>
+							</li>
+							<li class="nav__item">
+								<a href="properties.html" class="nav__link">Properties</a>
+							</li>
+							<li class="nav__item">
+								<a href="contact.html" class="nav__link">Contact</a>
+							</li>
+						</ul>
+						<div class="burger">
+							<div class="burger-line line1"></div>
+							<div class="burger-line line2"></div>
+							<div class="burger-line line3"></div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="main" id="home">
+			<section class="hero" id="hero">
+				<div class="hero__container">
+					<h2 class="hero__header">Find your ideal property</h2>
+					<p class="hero__text">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint hic expedita
+						necessitatibus! Enim quaerat, ipsam vitae libero, neque dolorum perferendis
+						ad, unde omnis ea quia..
+					</p>
+					<div class="hero__buttons">
+						<button
+							class="btn btn--pdlarge btn--golden"
+							onclick="location.href='/properties.html'"
+						>
+							Properties
+						</button>
+						<button class="btn btn--pdlarge btn--transparent">Contact</button>
+					</div>
+				</div>
+			</section>
+			<section class="section-featured">
+				<div class="container txt-center">
+					<div class="section-featured__title-container">
+						<h2 class="heading-h2">Featured properties</h2>
+						<hr class="hr-title" />
+					</div>
+					<div class="featured">
+						<div class="card">
+							<div class="card__image-container">
+								<img
+									src="/img/house-building-home-1946371.jpg"
+									alt=""
+									class="card__image"
+								/>
+								<button
+									class="btn btn__detail btn--pdmedium"
+									onclick="location.href='/single-property.html'"
+								>
+									Detail
+								</button>
+							</div>
+							<div class="card__type">Sale</div>
+							<h3 class="card__title">
+								<a href="/single-property.html">Large family home</a>
+							</h3>
+							<p class="card__location">
+								<svg>
+									<use xlink:href="img/fa-solid-sprite.svg#map-marker-alt"></use>
+								</svg>
+								Cheb, ulice Hradebni
+							</p>
+							<p class="card__price">$ 2,250,000</p>
+							<p class="card__excerpt">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique
+								dolores ducimus soluta maiores, eveniet excepturi.
+							</p>
+							<ul class="card__features">
+								<li class="card__bedrooms--icon">
+									<svg>
+										<use xlink:href="img/fa-solid-sprite.svg#bed"></use>
+									</svg>
+								</li>
+								<li class="card__bedrooms--count">5</li>
+								<li class="card__bathrooms--icon">
+									<svg>
+										<use xlink:href="img/fa-solid-sprite.svg#bath"></use>
+									</svg>
+								</li>
+								<li class="card__bathrooms--count">2</li>
+								<li class="card__area--icon">
+									<svg>
+										<use xlink:href="img/fa-solid-sprite.svg#square"></use>
+									</svg>
+								</li>
+								<li class="card__area--count">225 m<sup>2</sup></li>
+							</ul>
+						</div>
+
+						<div class="card">
+							<div class="card__image-container">
+								<img
+									src="/img/phil-hearing-IYfp2Ixe9nM-unsplash.jpg"
+									alt=""
+									class="card__image"
+								/>
+								<button
+									class="btn btn__detail btn--pdmedium"
+									onclick="location.href='/single-property.html'"
+								>
+									Detail
+								</button>
+							</div>
+							<div class="card__type">Prodej</div>
+							<h3 class="card__title">
+								<a href="/single-property.html">Rodinný dům 5+1</a>
+							</h3>
+							<p class="card__location">
+								<svg>
+									<use xlink:href="img/fa-solid-sprite.svg#map-marker-alt"></use>
+								</svg>
+								Cheb, ulice Hradební
+							</p>
+							<p class="card__price">$ 2,250,000</p>
+							<p class="card__excerpt">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique
+								dolores ducimus soluta maiores, eveniet excepturi.
+							</p>
+							<ul class="card__features">
+								<li class="card__bedrooms--icon">
+									<svg>
+										<use xlink:href="img/fa-solid-sprite.svg#bed"></use>
+									</svg>
+								</li>
+								<li class="card__bedrooms--count">1</li>
+								<li class="card__bathrooms--icon">
+									<svg>
+										<use xlink:href="img/fa-solid-sprite.svg#bath"></use>
+									</svg>
+								</li>
+								<li class="card__bathrooms--count">1</li>
+								<li class="card__area--icon">
+									<svg>
+										<use xlink:href="img/fa-solid-sprite.svg#square"></use>
+									</svg>
+								</li>
+								<li class="card__area--count">125 m<sup>2</sup></li>
+							</ul>
+						</div>
+						<div class="card">
+							<div class="card__image-container">
+								<img
+									src="/img/stephen-leonardi-8xn_PWT_6d0-unsplash.jpg"
+									alt=""
+									class="card__image"
+								/>
+								<button
+									class="btn btn__detail btn--pdmedium"
+									onclick="location.href='/single-property.html'"
+								>
+									Detail
+								</button>
+							</div>
+							<div class="card__type">Rent</div>
+							<h3 class="card__title">
+								<a href="/single-property.html">Rodinný dům 5+1</a>
+							</h3>
+							<p class="card__location">
+								<svg>
+									<use xlink:href="img/fa-solid-sprite.svg#map-marker-alt"></use>
+								</svg>
+								California, Kayo Dot
+							</p>
+							<p class="card__price">$ 50,000 / monthly</p>
+							<p class="card__excerpt">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique
+								dolores ducimus soluta maiores, eveniet excepturi.
+							</p>
+							<ul class="card__features">
+								<li class="card__bedrooms--icon">
+									<svg>
+										<use xlink:href="img/fa-solid-sprite.svg#bed"></use>
+									</svg>
+								</li>
+								<li class="card__bedrooms--count">1</li>
+								<li class="card__bathrooms--icon">
+									<svg>
+										<use xlink:href="img/fa-solid-sprite.svg#bath"></use>
+									</svg>
+								</li>
+								<li class="card__bathrooms--count">1</li>
+								<li class="card__area--icon">
+									<svg>
+										<use xlink:href="img/fa-solid-sprite.svg#square"></use>
+									</svg>
+								</li>
+								<li class="card__area--count">125 m<sup>2</sup></li>
+							</ul>
+						</div>
+					</div>
+					<button
+						class="btn btn--pdlarge btn--golden mg-top--5"
+						onclick="location.href='/properties.html'"
+					>
+						All offers
+					</button>
+				</div>
+			</section>
+			<section class="section-offer mg-top--5">
+				<div class="offer">
+					<h3 class="offer__header heading-h2">Celebrating 35 years in business</h3>
+					<h4 class="offer__subheader heading-h3">
+						Special offer after buying a property with us
+					</h4>
+					<ul class="offer__list">
+						<li class="offer__item">
+							&#9745; Lorem ipsum dolor amet consectetur adipisicing elit.
+							Consequuntur, facilis?
+						</li>
+						<li class="offer__item">
+							&#9745; Lorem ipsum dolor consectetur adipisicing elit. Maiores commodi
+							recusandae.
+						</li>
+						<li class="offer__item">
+							&#9745; Lorem sit amet consectetur adipisicing elit. Dolorem voluptate
+							consequuntur.
+						</li>
+						<li class="offer__item">
+							&#9745; Lorem ipsum amet consectetur, adipisicing elit. Minima nobis
+							architecto iure vel autem mollitia fugit, quas laboriosam.
+						</li>
+					</ul>
+				</div>
+				<div class="section-offer__img-container">
+					<img
+						class="section-offer__img"
+						src="/img/scott-graham-OQMZwNd3ThU-unsplash.jpg"
+						alt="signing"
+					/>
+				</div>
+			</section>
+			<section class="section-sluzby">
+				<div class="container">
+					<div class="section-sluzby__title-container">
+						<h2 class="section-sluzby__title">Services provided by our company</h2>
+						<hr class="hr-title" />
+					</div>
+					<div class="sluzby">
+						<div class="sluzby__row">
+							<div class="sluzby__item">
+								<svg class="sluzby__icon">
+									<use xlink:href="img/fa-solid-sprite.svg#home"></use>
+								</svg>
+								<h3 class="sluzby__title heading-h3">Property sale</h3>
+								<p class="sluzby__text">
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
+									dignissimos obcaecati impedit facere, explicabo fugit!
+								</p>
+							</div>
+							<div class="sluzby__item">
+								<svg class="sluzby__icon">
+									<use xlink:href="img/fa-solid-sprite.svg#building"></use>
+								</svg>
+								<h3 class="sluzby__title heading-h3">Rents</h3>
+								<p class="sluzby__text">
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est,
+									suscipit.
+								</p>
+							</div>
+							<div class="sluzby__item">
+								<svg class="sluzby__icon">
+									<use xlink:href="img/fa-solid-sprite.svg#toolbox"></use>
+								</svg>
+								<h3 class="sluzby__title heading-h3">Property management</h3>
+								<p class="sluzby__text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+									cupiditate eveniet iure minima inventore ea reiciendis officiis.
+								</p>
+							</div>
+						</div>
+						<div class="sluzby__row">
+							<div class="sluzby__item">
+								<svg class="sluzby__icon">
+									<use xlink:href="img/fa-solid-sprite.svg#tools"></use>
+								</svg>
+								<h3 class="sluzby__title heading-h3">Developer projects</h3>
+								<p class="sluzby__text">
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+								</p>
+							</div>
+							<div class="sluzby__item">
+								<svg class="sluzby__icon">
+									<use
+										xlink:href="img/fa-solid-sprite.svg#money-bill-wave-alt"
+									></use>
+								</svg>
+								<h3 class="sluzby__title heading-h3">Finance</h3>
+								<p class="sluzby__text">
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+									Labore, aperiam?
+								</p>
+							</div>
+							<div class="sluzby__item">
+								<svg class="sluzby__icon">
+									<use xlink:href="img/fa-solid-sprite.svg#users"></use>
+								</svg>
+								<h3 class="sluzby__title heading-h3">Professional staff</h3>
+								<p class="sluzby__text">
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+									Molestiae officiis a mollitia.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="cta">
+				<div class="container">
+					<h2 class="cta__phone">+420 555 856 741</h2>
+					<h2 class="cta__vyzva">Let's find your new property</h2>
+					<hr class="hr-title" />
+					<p class="cta__vyzva2">
+						If you are looking to sell or buy, please don't hesitate to contact us
+					</p>
+					<button
+						class="btn btn--primary btn--pdlarge"
+						onclick="location.href='/properties.html'"
+					>
+						Contact
+					</button>
+				</div>
+			</section>
+			<div class="scroll-top">
+				<a href="#header" class="scroll-top__link">
+					<svg class="scroll-top__icon">
+						<use xlink:href="img/fa-solid-sprite.svg#angle-up"></use>
+					</svg>
+				</a>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__parts-container">
+					<div class="footer__logo-box">
+						<h1 class="footer__logo">
+							<span class="footer__logo-real">Real</span> Estate
+						</h1>
+						<div class="footer__media-icons">
+							<ul>
+								<li>
+									<svg class="footer__media-icon">
+										<use xlink:href="img/fa-brands-sprite.svg#facebook"></use>
+									</svg>
+								</li>
+								<li>
+									<svg class="footer__media-icon">
+										<use xlink:href="img/fa-brands-sprite.svg#twitter"></use>
+									</svg>
+								</li>
+								<li>
+									<svg class="footer__media-icon">
+										<use xlink:href="img/fa-brands-sprite.svg#linkedin"></use>
+									</svg>
+								</li>
+								<li>
+									<svg class="footer__media-icon">
+										<use xlink:href="img/fa-brands-sprite.svg#youtube"></use>
+									</svg>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__links-container">
+						<div class="footer__links">
+							<h5 class="heading-h5 mg-bottom--2">Links</h5>
+							<ul>
+								<li>Home</li>
+								<li>About</li>
+								<li>Blog</li>
+								<li>Properties</li>
+								<li>Contact</li>
+							</ul>
+						</div>
+						<div class="footer__links">
+							<h5 class="heading-h5 mg-bottom--2">Company</h5>
+							<ul>
+								<li>FAQ</li>
+								<li>Careers</li>
+								<li>Partners</li>
+								<li>Agent Access</li>
+								<li>Contact Us</li>
+							</ul>
+						</div>
+					</div>
+					<form class="newsletter">
+						<div class="newsletter__header">
+							<svg class="newsletter__icon">
+								<use xlink:href="img/fa-solid-sprite.svg#envelope"></use>
+							</svg>
+							<p>Stay up to date with Real Estate</p>
+						</div>
+						<div class="newsletter__form-control">
+							<input type="email" placeholder=" " id="newsletter__email" />
+							<label for="newsletter__email">Email</label>
+						</div>
+						<button class="btn btn--transparent-grey btn--pdmedium mg-top--1">
+							Sign Up
+						</button>
+					</form>
+				</div>
+			</div>
+		</footer>
+
+		<script src="/js/main.js"></script>
+		<script src="/js/burger.js"></script>
+	</body>
+</html>

@@ -1,0 +1,77 @@
+.footer {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+		url(/img/office-windows.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 8rem 0rem;
+
+	&__parts-container {
+		display: flex;
+		justify-content: space-between;
+
+		@include media("S") {
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+
+	&__logo {
+		@include logo;
+	}
+
+	&__logo-real {
+		@include logoSpan;
+	}
+
+	&__logo-box {
+		max-width: max-content;
+		@include media("S") {
+			max-width: 100%;
+			text-align: center;
+		}
+	}
+
+	&__media-icons {
+		& ul {
+			list-style: none;
+			display: flex;
+			justify-content: space-between;
+			padding: 2rem 0rem;
+
+			@include media("S") {
+				justify-content: space-evenly;
+			}
+		}
+	}
+
+	&__media-icon {
+		height: 2.5rem;
+		width: 2.5rem;
+		fill: var(--clr-grey-light-1);
+		cursor: pointer;
+	}
+
+	&__links {
+		@include media("S") {
+			margin-top: 4rem;
+			text-align: center;
+		}
+
+		&-container {
+			flex-grow: 1;
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		& ul {
+			list-style: none;
+		}
+
+		& li {
+			color: white;
+			font-size: 1.4rem;
+			margin-bottom: 2rem;
+		}
+	}
+}

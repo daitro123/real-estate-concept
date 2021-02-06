@@ -1,0 +1,28 @@
+.carousel {
+	width: 60rem;
+	height: 45rem;
+	overflow: hidden;
+	position: relative;
+
+	@include media("M") {
+		width: 100%;
+		height: auto;
+	}
+
+	&__images {
+		display: flex;
+		transform: translateX(0rem);
+		transition: transform 0.5s ease-in;
+
+		& img {
+			display: block;
+			width: 60rem;
+			height: 45rem;
+
+			@include media("M") {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}

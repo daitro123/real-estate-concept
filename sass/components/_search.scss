@@ -1,0 +1,33 @@
+.search {
+	font-family: inherit;
+	position: relative;
+	width: 100%;
+
+	& input {
+		background-color: transparent;
+		border: 1px solid black;
+		border-radius: 5px;
+		padding: 1rem 1rem;
+		width: 100%;
+	}
+
+	&__btn {
+		padding: 0.6rem;
+		border: 0;
+		border-radius: 5px;
+		background-color: black;
+		height: 100%;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0;
+
+		&-icon {
+			display: inline-block;
+			vertical-align: middle;
+			height: 2.2rem;
+			width: 2.2rem;
+			fill: var(--clr-grey-light-1);
+		}
+	}
+}

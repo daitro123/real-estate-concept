@@ -1,0 +1,51 @@
+.newsletter {
+	max-width: 35rem;
+	min-width: 30rem;
+	margin-top: 5rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	&__header {
+		color: white;
+		font-size: 1.5rem;
+		display: flex;
+		align-items: center;
+	}
+
+	&__icon {
+		height: 2rem;
+		width: 2rem;
+		fill: var(--clr-grey-light-1);
+		margin-right: 2rem;
+	}
+
+	&__form-control {
+		margin-top: 4rem;
+		position: relative;
+
+		& input {
+			background-color: transparent;
+			border: 0;
+			border-bottom: 1px solid white;
+			width: 100%;
+			padding: 1.5rem 0rem;
+			font-size: 1.6rem;
+			color: white;
+			outline: none;
+
+			&:focus + label,
+			&:not(:placeholder-shown) + label {
+				transform: translateY(-2.5rem);
+			}
+		}
+
+		& label {
+			color: var(--clr-grey-light-1);
+			font-size: 1.6rem;
+			position: absolute;
+			top: 1.5rem;
+			left: 0;
+			transition: all 0.2s ease-out;
+		}
+	}
+}

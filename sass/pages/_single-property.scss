@@ -1,0 +1,79 @@
+.property {
+	padding: 10rem 0rem;
+	display: flex;
+
+	@include media("M") {
+		flex-direction: column;
+	}
+
+	&__title {
+		font-size: 3rem;
+		font-weight: 400;
+	}
+
+	&__location {
+		font-size: 1.6rem;
+		line-height: 2;
+	}
+
+	&__overview {
+		padding: 7rem 0rem 0rem 2rem;
+
+		@include media("M") {
+			padding: 7rem 0rem 0rem 0rem;
+		}
+
+		&-header {
+			font-weight: 400;
+			font-size: 1.6rem;
+		}
+
+		&-container {
+			display: flex;
+		}
+	}
+
+	&__summary {
+		flex: 0 0 30%;
+		margin-right: 2rem;
+
+		& dt {
+			float: left;
+			font-weight: 400;
+		}
+
+		& dd {
+			text-align: right;
+			margin: 1rem 0;
+		}
+	}
+
+	&__description {
+		flex: 1 1 70%;
+		font-size: 1.2rem;
+
+		& p {
+			line-height: 1.5;
+		}
+	}
+
+	&__map {
+		margin-top: 2rem;
+
+		& img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__gallery {
+		display: flex;
+		flex-wrap: wrap;
+
+		& img {
+			height: 11.25rem;
+			width: 15rem;
+			object-fit: cover;
+		}
+	}
+}

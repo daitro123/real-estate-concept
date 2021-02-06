@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACV,KAAK,EAAE,GAAG;EACV,gBAAgB,EAAE,oBAAoB;CACtC",
+    "sources": [
+        "../sass/pages/properties.scss"
+    ],
+    "names": [],
+    "file": "properties.css"
+}

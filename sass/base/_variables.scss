@@ -1,0 +1,42 @@
+:root {
+	--clr-grey-dark-1: rgb(77, 77, 77);
+	--clr-grey-dark-2: rgb(128, 128, 128);
+	--clr-grey-light-1: rgb(231, 231, 231);
+	--clr-grey-medium: rgb(199, 198, 198);
+	--clr-primary-light: #00416d;
+	--clr-primary: #132743;
+	--clr-secondary: #f8bd7f;
+	--clr-secondary-dark: #ff9f38;
+	--clr-beige-light: #f5f1da;
+	--clr-beige-dark: #e3dfc8;
+	--shadow-medium: 0px 5px 5px rgba(0, 0, 0, 0.2);
+	--shadow-hover: 0px 10px 10px rgba(0, 0, 0, 0.2);
+
+	--width-L: 1200px;
+	--width-M: 960px;
+	--width-S: 600px;
+	--width-XS: 360px;
+}
+
+@mixin media($breakpoint) {
+	@if $breakpoint == XS {
+		@media only screen and (max-width: 400px) {
+			@content;
+		}
+	}
+	@if $breakpoint == S {
+		@media only screen and (max-width: 640px) {
+			@content;
+		}
+	}
+	@if $breakpoint == M {
+		@media only screen and (max-width: 1010px) {
+			@content;
+		}
+	}
+	@if $breakpoint == L {
+		@media only screen and (max-width: 1250px) {
+			@content;
+		}
+	}
+}

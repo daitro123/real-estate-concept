@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/main.css" />
+		<title>Real Estate Company</title>
+	</head>
+	<body>
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__container">
+					<div class="header__logo-container">
+						<h1 class="header__logo">
+							<span class="header__logo-real">Real</span> Estate
+						</h1>
+					</div>
+					<nav class="nav" id="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="index.html" class="nav__link">Home</a>
+							</li>
+							<li class="nav__item">
+								<a href="about.html" class="nav__link">About</a>
+							</li>
+							<li class="nav__item">
+								<a href="blog.html" class="nav__link">Blog</a>
+							</li>
+							<li class="nav__item">
+								<a href="properties.html" class="nav__link">Properties</a>
+							</li>
+							<li class="nav__item">
+								<a href="contact.html" class="nav__link nav__link--active"
+									>Contact</a
+								>
+							</li>
+						</ul>
+						<div class="burger">
+							<div class="burger-line line1"></div>
+							<div class="burger-line line2"></div>
+							<div class="burger-line line3"></div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="contact" id="contact">
+			<header class="contact__map">
+				<div class="container">
+					<h1 class="contact__map-heading1">
+						Let us help you find your home or place for business
+					</h1>
+					<h3 class="contact__map-heading3">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, tempore.
+					</h3>
+				</div>
+			</header>
+			<div class="container">
+				<div class="contact__flex-container">
+					<div class="contact__details">
+						<div class="contact__details-wrapper">
+							<h3 class="contact__details-title">Contact</h3>
+							<div class="contact__address">
+								<strong>Address:</strong> Maslova 25, Prague 3
+							</div>
+							<div class="contact__email">
+								<strong>Email:</strong> realestate@realestate.com
+							</div>
+							<div class="contact__mobile">
+								<strong>Mobile:</strong> +456 213 123 444
+							</div>
+							<div class="contact__tel"><strong>Tel.:</strong> +215 213 568 789</div>
+							<div class="google-map" id="google-map">
+								<img src="/img/gmaps2.PNG" alt="" />
+							</div>
+						</div>
+					</div>
+					<form class="contact__form">
+						<h3 class="contact__form-title">Message Us</h3>
+						<div class="contact__form-row">
+							<div class="form-control">
+								<input type="text" class="form__fname" />
+								<label for="" class="form__fname-label">First Name</label>
+							</div>
+							<div class="form-control">
+								<input type="text" class="form__lname" />
+								<label for="" class="form__lname-label">Last Name</label>
+							</div>
+						</div>
+						<div class="form-control">
+							<input type="text" class="form__email" />
+							<label for="" class="form__email-label">Email</label>
+						</div>
+						<textarea
+							name="form__message"
+							id="form__message"
+							cols="30"
+							rows="10"
+							placeholder="Leave a message..."
+						></textarea>
+						<button class="btn btn--primary btn--pdmedium mg-top--2">Send</button>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__parts-container">
+					<div class="footer__logo-box">
+						<h1 class="footer__logo">
+							<span class="footer__logo-real">Reality</span> Macek
+						</h1>
+						<div class="footer__media-icons">
+							<ul>
+								<li>
+									<svg class="footer__media-icon">
+										<use xlink:href="img/fa-brands-sprite.svg#facebook"></use>
+									</svg>
+								</li>
+								<li>
+									<svg class="footer__media-icon">
+										<use xlink:href="img/fa-brands-sprite.svg#twitter"></use>
+									</svg>
+								</li>
+								<li>
+									<svg class="footer__media-icon">
+										<use xlink:href="img/fa-brands-sprite.svg#linkedin"></use>
+									</svg>
+								</li>
+								<li>
+									<svg class="footer__media-icon">
+										<use xlink:href="img/fa-brands-sprite.svg#youtube"></use>
+									</svg>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__links-container">
+						<div class="footer__links">
+							<h5 class="heading-h5 mg-bottom--2">Links</h5>
+							<ul>
+								<li>Home</li>
+								<li>About</li>
+								<li>Blog</li>
+								<li>Properties</li>
+								<li>Contact</li>
+							</ul>
+						</div>
+						<div class="footer__links">
+							<h5 class="heading-h5 mg-bottom--2">Company</h5>
+							<ul>
+								<li>FAQ</li>
+								<li>Careers</li>
+								<li>Partners</li>
+								<li>Agent Access</li>
+								<li>Contact Us</li>
+							</ul>
+						</div>
+					</div>
+					<form class="newsletter">
+						<div class="newsletter__header">
+							<svg class="newsletter__icon">
+								<use xlink:href="img/fa-solid-sprite.svg#envelope"></use>
+							</svg>
+							<p>Stay up to date with Real Estate</p>
+						</div>
+						<div class="newsletter__form-control">
+							<input type="email" placeholder=" " id="newsletter__email" />
+							<label for="newsletter__email">Email</label>
+						</div>
+						<button class="btn btn--transparent-grey btn--pdmedium mg-top--1">
+							Sign Up
+						</button>
+					</form>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Google Maps API -->
+		<!-- removed billing - API does not work -->
+		<!-- <script>
+			async function myMap() {
+				try {
+					const result = await fetch(
+						"https://maps.googleapis.com/maps/api/geocode/json?address=+Praha3&key=xxxx"
+					);
+					const resultJson = await result.json();
+					console.log(resultJson);
+					if (resultJson.status === "OK") {
+						const latitude = resultJson.results[0].geometry.location.lat;
+						const longitude = resultJson.results[0].geometry.location.lng;
+						const place = new google.maps.LatLng(latitude, longitude);
+						const mapProp = {
+							center: place,
+							zoom: 11,
+							controlSize: 25,
+						};
+						const map = new google.maps.Map(
+							document.getElementById("google-map"),
+							mapProp
+						);
+						const marker = new google.maps.Marker({
+							position: place,
+							map: map,
+						});
+					} else {
+						throw resultJson.status;
+					}
+				} catch (error) {
+					console.log(error);
+					document.getElementById("google-map").innerHTML =
+						"Error has ocurred when fetching data";
+				}
+			}
+		</script>
+		<script
+			src="https://maps.googleapis.com/maps/api/js?key=xxxx=myMap"
+			type="text/javascript"
+			async
+			defer
+		></script> -->
+		<script src="/js/burger.js"></script>
+	</body>
+</html>

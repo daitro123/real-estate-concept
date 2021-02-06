@@ -1942,7 +1942,7 @@ footer {
 
 @media only screen and (max-width: 640px) {
   .searchbar {
-    width: calc(360px + 2rem);
+    width: calc(360px - 2rem);
   }
 }
 

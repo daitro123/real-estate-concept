@@ -9,7 +9,7 @@
 	margin: 0 auto;
 
 	@include media("S") {
-		width: calc(360px + 2rem);
+		width: calc(360px - 2rem);
 	}
 
 	&__form {

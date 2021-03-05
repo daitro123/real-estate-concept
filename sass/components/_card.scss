@@ -128,13 +128,17 @@
 	display: flex;
 	font-size: 1.2rem;
 	margin-top: 3rem;
-	// width: 100%;
 
 	@include media("S") {
 		font-size: 1.4rem;
 	}
 
 	color: var(--clr-grey-dark-1);
+
+	&__details {
+		text-align: left;
+		flex: 1;
+	}
 
 	&__img {
 		height: 8rem;

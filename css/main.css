@@ -15,7 +15,7 @@
   --width-L: 1200px;
   --width-M: 960px;
   --width-S: 600px;
-  --width-XS: 360px;
+  --width-XS: 350px;
 }
 
 *,
@@ -1036,7 +1036,7 @@ footer {
 @media only screen and (max-width: 640px) {
   .nav__item {
     font-size: 1.8rem;
-    padding: 2rem 0;
+    padding: 4rem 0;
   }
 }
 

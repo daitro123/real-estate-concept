@@ -20,7 +20,7 @@
 			height: 45rem;
 
 			@include media("M") {
-				width: 100%;
+				min-width: 100%;
 				height: auto;
 			}
 		}

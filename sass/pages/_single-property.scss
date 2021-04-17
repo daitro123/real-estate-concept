@@ -74,6 +74,12 @@
 			height: 11.25rem;
 			width: 15rem;
 			object-fit: cover;
+
+			@include media("S") {
+				width: 33.333%;
+				height: auto;
+				flex-grow: 0;
+			}
 		}
 	}
 }
